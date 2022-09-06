@@ -15,8 +15,7 @@ fn main() {
         let unit: char = match unit.trim().parse() {
             Ok(1) => 'F',
             Ok(2) => 'C',
-            Ok(_) => continue,
-            Err(_) => continue,
+            _ => continue,
         };
 
         println!("Please input the temperature: ");
